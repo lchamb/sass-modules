@@ -1,0 +1,75 @@
+//
+// variables
+//
+
+// include vendor prefixes
+$prefixes:          true;
+
+
+// body text and sizes
+$base-font-size:    100%;
+$base-line-height:  150%;
+$rem-base:          16px;
+$em-base:           16px;
+
+
+// global padding and margins
+$global-margin:     20px;
+$global-padding:    $global-margin;
+
+
+// nice color palette
+// https://github.com/mrmrs/colors
+$aqua:    #7fdbff;
+$blue:    #0074d9;
+$navy:    #001f3f;
+$teal:    #39cccc;
+$green:   #2ecc40;
+$olive:   #3d9970;
+$lime:    #01ff70;
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red:     #ff4136;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+$white:   #fff;
+$silver:  #ddd;
+$gray:    #aaa;
+$black:   #111;
+
+
+// typography
+$sans-serif-font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$body-font-family:        $sans-serif-font-family;
+$body-text-color:         #332;
+
+$heading-font-family:     $sans-serif-font-family;
+$heading-font-weight:     700;
+$heading-text-color:      $black;
+$text-accent-color:       $red;
+$text-muted-color:        $gray;
+
+$global-text-shadow:      1px 1px 1px rgba(0,0,0,.5);
+
+
+// radii
+$global-radius:   5px;
+$global-rounded:  999px;
+
+
+// media queries
+$small-screen:  768px;
+$medium-screen: 1280px;
+$large-screen:  1440px;
+
+
+$screen: "only screen";
+
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+$small-up: "only screen and (min-width: #{$small-screen})";
+$medium-up: "only screen and (min-width: #{$medium-screen})";
+$large-up: "only screen and (min-width: #{$large-screen})";

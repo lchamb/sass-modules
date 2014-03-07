@@ -1,0 +1,20 @@
+//
+// base
+//
+
+// paulirish.com/2012/box-sizing-border-box-ftw
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// links
+a {
+  @include transition();
+
+  &:link {}
+  &:visited {}
+  &:hover {}
+  &:active {}
+}

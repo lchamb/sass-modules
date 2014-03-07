@@ -1,0 +1,86 @@
+//
+// mixins
+//
+
+// utility mixins
+@mixin box-sizing($type:border-box) {
+  @if $prefixes {
+    -moz-box-sizing: $type;
+    -webkit-box-sizing: $type;
+  }
+  box-sizing: $type;
+}
+
+@mixin clearfix() {
+  *zoom:1;
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_triangle.scss
+@mixin triangle ($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+
+    @if $direction == up {
+      border-bottom-color: $color;
+
+    } @else if $direction == right {
+      border-left-color:   $color;
+
+    } @else if $direction == down {
+      border-top-color:    $color;
+
+    } @else if $direction == left {
+      border-right-color:  $color;
+    }
+  }
+}
+
+@mixin webkit-input-reset() {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+
+  &::-webkit-search-decoration { display: none; }
+  &::-webkit-search-cancel-button { display: none; }
+  &::-webkit-search-results-button { display: none; }
+  &::-webkit-search-results-decoration { display: none; }
+}
+
+// css3 mixins
+@mixin background-size($size) {
+  @if $prefixes {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+  }
+  background-size: $size;
+}
+
+@mixin border-radius($radius:$global-radius) {
+  @if $prefixes {
+    -webkit-border-radius: $radius;
+  }
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadows...) {
+  @if $prefixes {
+    -webkit-box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+  }
+  box-shadow: $shadows;
+}
+
+@mixin transition($property:all, $speed:300ms, $ease:ease-out) {
+  @if $prefixes {
+    -webkit-transition: $property $speed $ease;
+    -moz-transition: $property $speed $ease;
+  }
+  transition: $property $speed $ease;
+}
