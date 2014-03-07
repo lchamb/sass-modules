@@ -1,0 +1,18 @@
+//
+// buttons
+//
+
+button,
+.button {
+
+  &:hover {}
+}
+
+input[type="submit"] {
+
+}
+
+// media queries
+@media #{$medium-up} {
+
+}
