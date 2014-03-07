@@ -6,6 +6,9 @@ button,
 .button {
 
   &:hover {}
+
+  &.disabled,
+  &[disabled] {}
 }
 
 input[type="submit"] {
@@ -13,6 +16,6 @@ input[type="submit"] {
 }
 
 // media queries
-@media #{$medium-up} {
+@media #{$small-up} {
 
 }

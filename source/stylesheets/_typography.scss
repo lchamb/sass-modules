@@ -18,6 +18,10 @@ p {
 
 }
 
+em {}
+strong {}
+small {}
+
 blockquote {
 
   &:before {}
@@ -26,6 +30,6 @@ blockquote {
 }
 
 // media queries
-@media #{$medium-up} {
+@media #{$small-up} {
 
 }

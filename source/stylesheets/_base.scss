@@ -17,3 +17,13 @@ a {
   &:hover {}
   &:active {}
 }
+
+// images
+img {
+  display: inline-block;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+// junk
+hr {}
