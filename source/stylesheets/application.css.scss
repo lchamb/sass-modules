@@ -1,0 +1,40 @@
+//
+// sass manifest file
+//
+
+// set character encoding
+@charset "UTF-8";
+
+// reset or normalize to align browser defaults
+// git.io/normalize
+@import "normalize";
+
+// global variables, helper functions, and mixins
+@import "variables",
+        "functions",
+        "mixins";
+
+// animations
+// https://medium.com/design-ux/926eb80d64e3
+@import "animations";
+
+// base classes and grid system
+@import "base",
+        "grid";
+
+// native browser elements
+@import "typography",
+        "lists",
+        "buttons",
+        "forms";
+
+// non-native but common ui elements
+// @import "alerts",
+//         "icons";
+
+// application-specific elements
+// @import "calendars",
+//         "charts";
+
+// utility classes
+@import "utilities";
